@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+
+# Environment Secrets
+.env
+backend/.env
+*.env
+
+# Build Artifacts
+dist/
+build/
+out/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# System & OS Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Local App Data & Brain logs
+.gemini/
+.system_generated/
+*.log
+temp_audio/
+compressed_*/
+chunk_*/
+dummy_test.wav
+dummy_*.wav
