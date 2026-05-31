@@ -120,20 +120,6 @@ MeetMind AI is an advanced, AI-powered meeting transcription and intelligence pl
    npm run build
    npm run preview
    ```
-   *The preview server runs on `http://localhost:3001/` with pre-compiled bundles loading in 15ms.*
+   
 
----
-
-## Production Deployment
-
-### Frontend (Netlify / Vercel)
-* Deploy the root folder as a static site.
-* Build Command: `npm run build`
-* Publish Directory: `dist`
-* Configure a redirect rule (e.g., in `public/_redirects`) to proxy `/api/*` to your hosted backend to prevent CORS problems.
-
-### Backend (Railway / Render / VPS)
-* Deploy the backend directory as a persistent containerized service.
-* Ensure the hosting server contains the `ffmpeg` system binary.
-* Add your environment variables (Supabase, OpenAI, Gemini keys) to the platform settings.
-* Set the `CORS_ORIGINS` value to include your Netlify frontend URL.
+--
