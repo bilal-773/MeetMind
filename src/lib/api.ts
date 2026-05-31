@@ -2,7 +2,7 @@ import axios from 'axios'
 import { useAuthStore } from '@/stores/authStore'
 
 const api = axios.create({
-  baseURL: '/api/v1',
+  baseURL: (import.meta as any).env.VITE_API_URL || '/api/v1',
   timeout: 0, // No global timeout — upload can take a long time for large files
 })
 
